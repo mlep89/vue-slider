@@ -18,9 +18,9 @@
                 <i class="fas fa-chevron-left"></i>
             </div>
             <div class="image">
-                <img :src="images[counter_photo]" alt="">
+                <img :src="pokemon[counter_photo].img" alt="">
                 <div class="nav">
-                    <i v-for="(photo, index) in images" class="fas fa-circle"></i>
+                    <i  v-for="(photo, index) in pokemon" class="fas fa-circle"></i>
                 </div>
             </div>
             <div class="next" @click="nextClick">
@@ -28,7 +28,7 @@
             </div>
         </div>
         <h3 class="text-center">Il suo nome è:</h3>
-        <p class="text-center">{{names[counter_photo]}}</p>
+        <p :class="chooseColor(pokemon[counter_photo].sign)" class="text-center">{{pokemon[counter_photo].myName}}</p>
     </div>
     
 

@@ -66,3 +66,13 @@ p {
     font-size: 50px;
     color: green
 }
+
+.green {
+    color: green;
+}
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
